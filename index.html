@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Фигурки База Лайтера</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/accordion.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+	<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+		<div class="col-md-3 mb-2 mb-md-0">
+		  <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+			<svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+		  </a>
+		</div>
+  
+		<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+		  <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+		  <li><a href="#" class="nav-link px-2">Features</a></li>
+		  <li><a href="#" class="nav-link px-2">Pricing</a></li>
+		  <li><a href="#" class="nav-link px-2">FAQs</a></li>
+		  <li><a href="#" class="nav-link px-2">About</a></li>
+		</ul>
+  
+		<div class="col-md-3 text-end">
+		  <button type="button" class="btn btn-outline-primary me-2">Login</button>
+		  <button type="button" class="btn btn-primary">Sign-up</button>
+		</div>
+	  </header>
+	<header id="header" class="header">
+		<div class="container">
+			<nav class="nav">
+				<h4 class="logo">Al's Toy Barn</h4>
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#header" class="nav__link">Главная</a>
+					</li>
+					<li class="nav__item">
+						<a href="#shop" class="nav__link">Фигурки</a>
+					</li>
+					<li class="nav__item">
+						<a href="#maps" class="nav__link">Карты</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Видеоигры</a>
+					</li>
+				</ul>
+
+				<div class="burger" onclick="burgerClick()">
+					<div class="burger__line burger__line_1"></div>
+					<div class="burger__line burger__line_2"></div>
+					<div class="burger__line burger__line_3"></div>
+				</div>
+
+
+			</nav>
+
+			<button id="btn-menu" class="btn-menu">Меню</button>
+			<div id="menu" class="header__menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#">Вход</a></li>
+					<li class="menu__item"><a href="#">Корзина</a></li>
+					<li class="menu__item"><a href="#">Акции</a></li>
+					<li class="menu__item"><a href="#">Реклама</a></li>
+					<li class="menu__item">
+						<div class="theme">
+							<h4 class="theme__title">Тема</h4>
+							<ul class="theme__list">
+								<li class="theme__item">
+									<div class="theme__light" onclick="choiceLight()"></div>
+								</li>
+								<li class="theme__item">
+									<div class="theme__dark" onclick="choiceDark()"></div>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="clock">
+			<div class="container container_clock">
+				<div id="time"></div>
+			</div>
+		</section>
+		<section id="shop" class="shop">
+			<div class="container">
+				<h1 class="shop_title">Фигурки База Лайтера</h1>
+				<img src="img/bazz_img.jpg">
+
+				<div class="accordion" id="accordion-1">
+					<div class="accordion__item">
+						<h2 class="accordion__header">О товаре</h2>
+						<div class="accordion__body">
+							<p class="shop_text">Крылья и руки Базза Лайтера могут излучать звук и свет
+								Талию Базза Лайтера можно поворачивать на 360 градусов
+								Ноги, колени и суставы стопы Базза Лайтера можно поворачивать</p>
+						</div>
+					</div>
+					<div class="accordion__item">
+						<h2 class="accordion__header">Цена</h2>
+						<div class="accordion__body">
+							<p class="shop_price">6 226 ₽</p>
+							<button type="button" class="shop_btn" id="btn" onclick="buy()">Купить</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="cards">
+			<div class="container">
+				<div class="cards__container">
+					<ul class="cards__list">
+						<li class="cards__item">
+							<div class="card" style="width: 18rem;">
+								<img src="img/buzz.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+								  <h5 class="card-title">Фигурка Базза Лайтера</h5>
+								  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								  <a href="#" class="btn btn-primary">Перейти</a>
+								</div>
+							  </div>
+						</li>
+						<li class="cards__item">
+							<div class="card" style="width: 18rem;">
+								<img src="img/buzz.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+								  <h5 class="card-title">Фигурка Базза Лайтера</h5>
+								  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								  <a href="#" class="btn btn-primary">Перейти</a>
+								</div>
+							  </div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="maps" class="maps">
+			<div class="container">
+				<h1 class="maps__title">Точка самовывоза</h1>
+				<div class="google">
+					<h3 class="google__map">Google карта</h3>
+					<iframe
+						class="google__container"
+						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d730.9517595939516!2d85.9683870519076!3d51.959146128567085!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42c4ff64c0cdcf4b%3A0x7ae091eb5b0b74c7!2z0JHRg9C60LXRgtC90LDRjyDQu9Cw0LLQutCwLCDRgdCw0LvQvtC9INC4INC00L7RgdGC0LDQstC60LAg0YbQstC10YLQvtCy!5e0!3m2!1sru!2sru!4v1701512132959!5m2!1sru!2sru"
+						width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="yandex">
+					<h3 class="yandex__map">Яндекс карта</h3>
+					<script type="text/javascript" charset="utf-8" async
+						src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A12cfd158267ad4534f510c3436a5f215afc5c0d87164ab6dcb5b484529b0e17b&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
+					</script>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container container_footer">
+			<p class="footer__text">&copy; Al's Toy Barn</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/accordion.js"></script>
+	<script type="text/javascript" src="js/theme.js"></script>
+	<script type="text/javascript" src="js/burger.js"></script>
+	<script type="text/javascript" src="js/time.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
+
+
